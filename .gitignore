@@ -1,0 +1,4 @@
+*.log
+*.csv
+*.xlsx
+smtp_credential.xml

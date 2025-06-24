@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f9; margin: 0; padding: 0;">
+
+    <!-- Conteneur principal -->
+    <div style="max-width: 600px; margin: 20px auto; background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        
+        <!-- En-tête avec titre -->
+        <div style="background-color: #d9534f; color: #ffffff; padding: 20px; border-top-left-radius: 8px; border-top-right-radius: 8px; text-align: center;">
+            <h1 style="margin: 0; font-size: 22px;">Votre compte a été désactivé</h1>
+        </div>
+
+        <!-- Message principal -->
+        <div style="padding: 20px;">
+            <p style="font-size: 16px; color: #333333;">Bonjour {{DisplayName}},</p>
+            <p style="font-size: 16px; color: #333333; line-height: 1.5;">
+                Nous vous informons que votre compte <b>professionnel</b> a été désactivé en raison d'une période d'inactivité prolongée. 
+                Votre dernière connexion remonte au <span style="font-weight: bold;">{{LastLogon}}</span>, soit 
+                <span style="font-weight: bold;">{{DaysInactive}} jours</span> sans activité.
+            </p>
+            <p style="font-size: 16px; color: #333333; line-height: 1.5;">
+                Conformément à la politique de sécurité de l'entreprise, les comptes inactifs sont désactivés après une période de 
+                <span style="color: #d9534f; font-weight: bold;">{{InactivityDays}} jours</span>.
+            </p>
+            <p style="font-size: 16px; color: #333333; line-height: 1.5;">
+                Malheureusement, vous n'avez pas effectué de connexion avant la date limite, et votre compte a donc été désactivé.
+            </p>
+            <p style="font-size: 16px; color: #333333; line-height: 1.5;">
+                Si vous pensez que cette désactivation est une erreur ou si vous souhaitez réactiver votre compte, veuillez contacter 
+                l’équipe informatique dès que possible.
+            </p>
+            <p style="font-size: 16px; color: #333333; line-height: 1.5;">
+                Veuillez noter que vos données pourraient être supprimées conformément à nos politiques de sécurité.
+            </p>
+        </div>
+
+        <!-- Section de contact -->
+        <div style="background-color: #f4f4f9; padding: 20px; text-align: center; font-size: 14px; color: #555;">
+            <p style="margin: 0; font-weight: bold;">Contactez-nous :</p>
+            <p style="margin: 5px 0;">
+                <a href="mailto:{{emailSupport}}" style="color: #0056b3; text-decoration: none;">{{emailSupport}}</a> | 
+                <a href="tel:{{phoneSupportHref}}" style="color: #0056b3; text-decoration: none;">{{phoneSupport}}</a>
+            </p>
+            <p style="margin: 5px 0;">
+                <a href="{{urlSupport}}" style="color: #0056b3; text-decoration: none;">Portail de support</a>
+            </p>
+        </div>
+
+        <!-- Pied de page -->
+        <div style="background-color: #f4f4f9; padding: 5px; text-align: center; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; font-size: 12px; color: #555;">
+            <p style="margin: 0;">Ce message a été généré automatiquement par le script <b>{{ScriptName}}</b>. Merci de ne pas répondre à cet email.</p>
+            <p style="margin-top: 10px;">Cordialement,<br><i>Le Service Informatique</i></p>
+        </div>
+
+    </div>
+
+</body>
+</html>
